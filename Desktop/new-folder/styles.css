@@ -1,0 +1,176 @@
+/* ===== Basic Page Styling ===== */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #FAFCF9;
+    color: #26382D;
+}
+
+
+/* ===== Header ===== */
+
+header {
+    background-color: #3F604A;
+    color: white;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+/* ===== Navigation ===== */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #DDE9DF;
+}
+
+
+/* ===== Hero Section ===== */
+
+#home {
+    background-color: #E8F0E9;
+    padding: 70px 40px;
+    text-align: center;
+}
+
+#home h2 {
+    color: #3F604A;
+    font-size: 40px;
+}
+
+#home p {
+    font-size: 18px;
+}
+
+
+/* ===== Programs Section ===== */
+
+#programs {
+    padding: 50px 40px;
+}
+
+#programs > h2 {
+    text-align: center;
+    color: #3F604A;
+}
+
+
+/* ===== Programs Layout ===== */
+
+.programs-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+
+/* ===== Sidebar ===== */
+
+.sidebar {
+    background-color: #5F8068;
+    padding: 20px;
+    border-radius: 12px;
+    min-width: 180px;
+}
+
+.sidebar h3 {
+    color: white;
+    margin-top: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.sidebar a:hover {
+    color: #DDE9DF;
+}
+
+
+/* ===== Program Cards ===== */
+
+.program-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    flex: 1;
+}
+
+.program-cards article {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #D5E2D7;
+    box-shadow: 0 4px 12px rgba(38, 56, 45, 0.08);
+}
+
+.program-cards article:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ===== About ===== */
+
+#about {
+    background-color: #E8F0E9;
+    padding: 50px 40px;
+}
+
+
+/* ===== Footer ===== */
+
+footer {
+    background-color: #5F8068;
+    color: white;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+
+/* ===== Responsive Design ===== */
+
+@media (max-width: 700px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .programs-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: auto;
+    }
+
+    .program-cards {
+        grid-template-columns: 1fr;
+    }
+
+    #home h2 {
+        font-size: 30px;
+    }
+}
