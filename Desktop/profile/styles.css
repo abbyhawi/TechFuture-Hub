@@ -1,0 +1,30 @@
+body{
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+}
+ 
+profile-card{
+    height: 200px ;
+    width: 300px;
+    padding: 20px;
+    margin:40px auto;
+    border: 1px solid white;
+    border-radius: 12px;
+    
+}
+
+h1{
+    color: darkblue;
+    text-align: center;
+}
+
+h2{
+    color:blueviolet;
+
+}
+ 
+p{
+    color: plum;
+    line-height: 1.6;
+    font-size: 15px;
+}
